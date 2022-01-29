@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="temp state">
+            <label for="">City</label>
+            <input type="text" class="te" value='37^C' disabled="true">
+        </div>
+        <div class="im">
+            <img src="" alt="" srcset="" id="img">
+        </div>
+        <div class="loc">
+            <div class="state">
+                <label for="">Celsius</label>
+                            <input type="text" class="in-st" value='Miami' disabled="true">
+
+            </div>
+            <div class="city">
+                <label for="">Fahrenheit</label>
+                            <input type="text" class="in-ci" value='Maldives' disabled="true">
+
+            </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="Get Location" id="bt">
+        </div>
+    </div>
+    <div class="modal">
+    <div class="info">
+        <div class="pos"><span class="close">X</span></div>
+         <div class="City">
+            <p>City</p>
+            <input type="text" id="ci">
+        </div>
+        <input type="button" value="Submit" id="btn">
+    </div>
+</div>
+<script src="app.js"></script>    
+</body>
+</html>
