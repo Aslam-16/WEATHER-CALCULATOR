@@ -27,7 +27,7 @@ function closemodal(){
 modal_btn.addEventListener('click',datafetch)
 
 function datafetch(){
-    const url=`http://api.weatherapi.com/v1/current.json?key=${key}&q=${city.value}&aqi=yes`
+    const url=`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city.value}&aqi=yes`
 
 fetch(url).then(res=>res.json()).then(data=>{
     console.log(data.current.temp_c,data.current.temp_f);
@@ -39,7 +39,7 @@ fetch(url).then(res=>res.json()).then(data=>{
 })
 }
 function load(){
-    const url=`http://api.weatherapi.com/v1/current.json?key=${key}&q=london&aqi=yes`
+    const url=`https://api.weatherapi.com/v1/current.json?key=${key}&q=london&aqi=yes`
 
 fetch(url).then(res=>res.json()).then(data=>{
     console.log(data.current.temp_c,data.current.temp_f);
